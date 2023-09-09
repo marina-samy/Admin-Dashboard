@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark px-2 d-flex justify-content-between">
+    <div class="d-flex">
+    <div class="side-nav-button p-2 me-3 text-light" (click)="SideNavToggled()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <a class="navbar-brand px-4 fs-4 text-warning" href="#" >Electron</a>
+</div>
+    
+        
+
+<div *ngIf="isLoggedIn()">
+    <button class="btn btn-outline-warning me-5" routerLink="/Logout" (click)="userLogout()">Logout</button>
+  </div>
+    <!-- <button class="dropdown-item btn btn-outline-none border-0" routerLink="/Logout" (click)="userLogout()" [hidden]="!userLogged">Logout</button> -->
+
+</nav>

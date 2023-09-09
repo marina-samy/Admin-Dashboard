@@ -1,0 +1,54 @@
+
+
+<div class="container d-flex flex-column align-items-center">
+    <div class="w-75 p-3 shadow-lg rounded-3 border border-warning mt-5">
+    <form #productForm="ngForm">
+        <div class="mb-3">
+          <label for="catName" class="form-label">Product Name</label>     
+          <input type="text" #proNameInput="ngModel" class="form-control" name="proName" id="proName"
+           [(ngModel)]="pro.name" required  [class.is-valid]="proNameInput.valid" [class.is-invalid]="proNameInput.invalid">
+        </div>  
+
+        <div class="mb-3">
+            <label for="catName" class="form-label">Quantity</label>     
+            <input type="text" #proQuantInput="ngModel" class="form-control" name="proQuant" id="proQuant"
+             [(ngModel)]="pro.quantity" required  [class.is-valid]="proQuantInput.valid" [class.is-invalid]="proQuantInput.invalid">
+          </div>  
+
+          <div class="mb-3">
+            <label for="catName" class="form-label">Price</label>     
+            <input type="text" #proPriceInput="ngModel" class="form-control" name="proPrice" id="proPrice"
+             [(ngModel)]="pro.price" required  [class.is-valid]="proPriceInput.valid" [class.is-invalid]="proPriceInput.invalid">
+          </div>  
+
+          <div class="mb-3">
+            <label for="catName" class="form-label">Image URL</label>     
+            <input type="text" #URLInput="ngModel" class="form-control" name="image" id="image"
+             [(ngModel)]="pro.img" required  [class.is-valid]="URLInput.valid" [class.is-invalid]="URLInput.invalid">
+          </div>  
+
+          <div class="mb-3">
+            <label for="catName" class="form-label">Brand</label>     
+            <input type="text" #proBrandInput="ngModel" class="form-control" name="proBrand" id="proBrand"
+             [(ngModel)]="pro.brand" required  [class.is-valid]="proBrandInput.valid" [class.is-invalid]="proBrandInput.invalid">
+          </div>  
+
+          <div class="mb-3">
+            <label for="catName" class="form-label">Color Name</label>     
+            <input type="text" #proColorInput="ngModel" class="form-control" name="proColor" id="proColor"
+             [(ngModel)]="pro.color" required  [class.is-valid]="proColorInput.valid" [class.is-invalid]="proColorInput.invalid">
+          </div>   
+      
+          <button type="submit" class="btn btn-outline-warning" (click)="update()">Update</button>
+              </form>
+      
+      
+      <!-- <h1 class="bg-info">{{cat|json}}</h1> -->
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
